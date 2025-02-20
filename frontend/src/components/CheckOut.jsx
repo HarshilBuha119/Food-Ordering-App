@@ -37,7 +37,7 @@ export default function Checkout({ onClose, cartItems, onGoBack }) {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3000/orders', {
+      const response = await fetch('https://food-ordering-app-r7sm.onrender.com/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
