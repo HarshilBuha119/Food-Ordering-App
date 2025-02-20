@@ -3,6 +3,7 @@ import MealItem from "./MealItem";
 
 export default function Meals() {
   const [loadedMeals, setLoadedMeals] = useState([]);
+  const mealss=loadedMeals
 
   useEffect(() => {
     async function fetchMeals() {
@@ -15,7 +16,7 @@ export default function Meals() {
   
   return (
     <ul id="meals">
-      {loadedMeals.map((meal) => (
+      {mealss.map((meal) => (
         <MealItem key={meal.id} meal={meal} />
       ))}
     </ul>
