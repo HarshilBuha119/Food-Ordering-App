@@ -7,7 +7,7 @@ export default function Meals() {
 
   useEffect(() => {
     async function fetchMeals() {
-      const response = await fetch("https://food-ordering-app-r7sm.onrender.com/meals");
+      const response = await fetch("https://food-ordering-app-1-z69v.onrender.com/meals");
       const meals = await response.json();
       setLoadedMeals(meals);
     }
